@@ -26,17 +26,14 @@ export default {
 
 <style lang="scss" scoped>
 .floor {
-    width: 90vw;
-    height: 140px;
-    border: 2px solid #000000;
-    margin-left: 125px;
+    width: 1000px;
+    height: 137px;
+ //   border: 2px solid #000000;
+//margin-left: 125px;
     position: relative;
+	border: 2px solid #000000;
+	
 
-    &-container {
-        height: 170px;
-        width: auto;
-        margin-top: 20px;
-
-    }
+  
 }
 </style>

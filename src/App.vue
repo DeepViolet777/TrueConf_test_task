@@ -1,7 +1,10 @@
 <template>
 <div>
-    <elevator-item />
-    <floor-container/>
+    <div class="wrapper">
+        <elevator-item />
+        <floor-container />
+    </div>
+    
 </div>
 </template>
 
@@ -15,23 +18,18 @@ export default {
         ElevatorItem,
         FloorContainer
     },
+   
     data() {
         return {
-            
            
-            queuqe: [],
-            elevator: {
-                currentFloor: 1,
-                isMoving: false,
-                isRefreshing: false
-            },
+         
         }
     },
     methods:{
-        callElevator(index){
-          console.log(index+1)
+        // callElevator(index){
+        //   console.log(index+1)
             
-           }
+        //    }
 
         
     },
@@ -39,14 +37,23 @@ export default {
 </script>
 
 <style lang="scss">
+body{
+    box-sizing: border-box;
+}
 
-
-/* #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+  #app {
+    display: flex;
+   
+   /* font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-} */
+    margin-top: 100px;
+    
+    position: relative;*/
+} 
+.wrapper{
+   margin-top: 100px;
+    margin-left: 100px;
+}
 </style>
